@@ -2,14 +2,14 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('ping2')
-        .setDescription('pong skurwysynie'),
+        .setName('launcher')
+        .setDescription('Launcher do łatwego wchodzenia na WitcherCrafta'),
     async execute(interaction, client){
         const message = await interaction.deferReply({
             fetchReply: true
         });
 
-        const newMessage = `szmata za szmatą i nie tykam przścieradła   https://tenor.com/view/dante-dmc-gif-gif-21908025`
+        const newMessage = `https://www.curseforge.com/minecraft/mc-mods/devil-may-cry-weapons-reborn`
         await interaction.editReply({
             content:newMessage
         });
